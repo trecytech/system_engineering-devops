@@ -1,3 +1,2 @@
 #!/bin/bash
-set hello so owner and group have no perms, others have rwx
 chmod 007 hello
