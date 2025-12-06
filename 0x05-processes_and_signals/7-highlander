@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-# This script makes the process invincible to SIGTERM
+# This script demonstrates handling SIGTERM
 
-# Ignore SIGTERM
-trap '' SIGTERM
+# Trap SIGTERM and run a function
+trap 'echo "Terminating..."; exit 0' SIGTERM
 
-# Main loop so the process keeps running
+# Example loop to keep script running
 while true; do
-    sleep 1
+  echo "Running..."
+  sleep 2
 done
